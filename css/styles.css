@@ -1,0 +1,242 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    background-image: linear-gradient(to bottom right, rgb(119, 184, 245) , rgb(209, 232, 248));
+    width: 100vw;
+}
+.naslov {
+    width: 750px;
+    height: 60px;
+    background-color: white;
+}
+.najveci {
+    width: 750px;
+    height: 100vh;
+    border: 2px solid white;
+    /* background-color: rgb(114, 169, 231); */
+    background-image: linear-gradient(to bottom, rgb(114, 169, 231) , rgb(141, 191, 238));
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.red {
+    display: flex;
+    width: 750px;
+    height: 100px;
+    padding-left: 10px;
+    margin-top: 5px;    
+}
+.mesto {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.pogodak {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-top: 14px;
+}
+.dugme {
+    width: 72px;
+    height: 72px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 9px 5px;
+    color: rgb(82, 139, 212);
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 1;
+    box-shadow: 2px -2px 5px rgb(66, 128, 209);
+    border: 0;
+}
+.dugme1 {
+    width: 72px;
+    height: 72px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 9px 5px;
+    color: rgb(82, 139, 212);
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    box-shadow: 2px -2px 5px rgb(66, 128, 209);
+    border: 0;
+}
+.resenje {
+    display: flex;
+    float: left;
+    width: 360px;
+    height: 100px;
+    /* background-color: rgb(82, 139, 212); */
+    border-radius: 25px;
+    /* border: 2px solid rgb(250, 246, 229); */
+    padding-top: 5px;
+    box-shadow: 3px -3px 3px rgb(66, 128, 209);
+    /* border: 1px solid rgb(66, 128, 209); */
+}
+.zadato {
+    display: flex;
+    width: 750px;
+    height: 120px;
+    margin: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.novaIgra {
+    width: 120px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: rgb(62, 116, 185);
+    float: right;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    /* box-shadow: 3px -3px 3px rgb(66, 128, 209); */
+
+
+
+}
+.obavestenje {
+    width: 250px;
+    height: 100px;
+    background: rgb(7, 66, 143);
+    margin-left: 90px;
+    border-radius: 30px;
+    /* box-shadow: 3px -3px 1px rgb(66, 128, 209); */
+    box-shadow: 3px -3px 3px rgb(66, 128, 209);
+
+}
+#obavestenje {
+    width: 250px;
+}
+.ponuda {
+    display: flex;
+    width: 555px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+    padding-top: 5px;
+    /* border: 2px solid rgb(66, 128, 209); */
+    box-shadow: 4px -5px 3px rgb(66, 128, 209) ;
+}
+.newGame {
+    padding-right: 10px;
+}
+.donji {
+    display: flex;
+    width: 750px;
+    height: 110px;
+    margin-top: 20px;
+}
+
+.nevidljivi {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+.naslov {
+    width: 400px;
+    height: 48px;
+}    
+  
+.najveci {
+    width: 400px;
+    background-color: rgb(14, 100, 3);
+    margin: 0 auto;
+   
+}
+.red {
+    display: flex;
+    width: 400px;
+    height: 48px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.mesto {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.pogodak {
+    width: 38px;
+    height: 38px;
+    background-color: rgb(216, 161, 9);
+    border-radius: 50%;
+    margin: 5px 0;
+}
+.dugme {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(250, 246, 229);
+    border-radius: 50%;
+    margin: 4px 0px;
+    color: rgb(14, 100, 3);
+    font-size: 15px;
+    font-weight: bold;
+}
+.dugme1 {
+    visibility: hidden;
+}
+.resenje {
+    display: flex;
+    float: left;
+    width: 192px;
+    height: 56px;
+    background-color: rgb(21, 75, 7);
+    border-radius: 25px;
+    border: 1px solid rgb(250, 246, 229);
+    padding-top: 4px;
+
+}
+.zadato {
+    display: flex;
+    width: 400px;
+    height: 60px;
+    margin-top: 30px;
+}
+.novaIgra {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(241, 199, 8);
+    float: right;
+    margin-right: 30px;
+    color: rgb(250, 246, 229);
+    font-weight: bold;
+    font-size: 10px;
+}
+.obavestenje {
+    width: 130px;
+    height: 50px;
+    background: rgb(21, 75, 7);
+    margin-left: 40px;
+    border-radius: 15px;
+}
+.ponuda {
+    display: flex;
+    width: 300px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 25px;
+    background: rgb(21, 75, 7);
+    padding-top: 6px;
+}
+.donji {
+    display: flex;
+    width: 400px;
+    height: 80px;
+    margin-top: 20px;
+}
+}
