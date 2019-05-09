@@ -8,10 +8,6 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
-
-/* pocinje pravo */
-
 @media (min-width: 375px) {
 
     .naslov {
@@ -131,8 +127,6 @@ body {
         display: flex;
         width: 375px;
         height: 70px;
-        /* margin-bottom: 50px; */
-        /* padding-top: 20px; */
         padding: 0 5.5px;
         margin-bottom: 11%;
     }
@@ -259,8 +253,6 @@ body {
         display: flex;
         width: 480px;
         height: 78px;
-        /* margin-bottom: 50px; */
-        /* padding-top: 20px; */
         padding: 0 5px;
         margin-bottom: 11%;
     }
@@ -387,8 +379,6 @@ body {
         display: flex;
         width: 750px;
         height: 112px;
-        /* margin-bottom: 50px; */
-        /* padding-top: 20px; */
         padding: 0 5px;
         margin-bottom: 11%;
     }
@@ -515,8 +505,6 @@ body {
         display: flex;
         width: 548px;
         height: 96px;
-        /* margin-bottom: 50px; */
-        /* padding-top: 20px; */
         padding: 0 5px;
         margin-bottom: 1%;
     }
