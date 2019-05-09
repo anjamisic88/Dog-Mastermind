@@ -34,6 +34,8 @@ var la4 = document.getElementById('la4');
 
 var la = [la1, la2, la3, la4];
 
+D = [0, 1, 2, 3, 4];
+
 var lb1 = document.getElementById('lb1');
 var lb2 = document.getElementById('lb2');
 var lb3 = document.getElementById('lb3');
@@ -149,17 +151,42 @@ function nizF() {
 
 nizF();
 
-all = [];
-all = a.concat(b).concat(c).concat(d).concat(e).concat(f);
+var sviNizovi = [];
+
+sviNizovi.push(a);
+sviNizovi.push(b);
+sviNizovi.push(c);
+sviNizovi.push(d);
+sviNizovi.push(e);
+sviNizovi.push(f);
+
+
+function povecajD(i) {
+    D[i] = i + 1;
+}
 
 //Pravljenje funkcije kojom izabrani simbol odlazi na mesto izabrano od strane korisnika
 
 function postavi (m) {
-    for(var i = 0; i < 24; i++) {
-        if(all[i].src == pocetni.src) {
-           all[i].src = m.src;
-           break;
-        } 
+    function popuniA() {
+        for(var i =0; i < 1; i++) {
+            for(var j = 0; j < 4; j++) {
+                if(sviNizovi[i][j].src == pocetni.src) {
+                    sviNizovi[i][j].src = m.src;
+                    break;
+                }
+            }
+        }
+    }
+    popuniA();
+
+    for(var i = 1; i < sviNizovi.length; i++) {
+        for(var j = 0; j < 4; j++) {
+            if((D[i] == (i + 1)) && (sviNizovi[i][j].src == pocetni.src)) {
+                sviNizovi[i][j].src = m.src;
+                break;
+            }
+        }
     }
 }
 
@@ -349,22 +376,27 @@ $(document).ready(function() {
     $('#dugme1').on('click', function() {
         majkaA();
         $('#dugme2').removeClass('dugme1').addClass('dugme');
+        povecajD(1);
     });
     $('#dugme2').on('click', function() {
         majkaB();
         $('#dugme3').removeClass('dugme1').addClass('dugme');
+        povecajD(2);
     });
     $('#dugme3').on('click', function() {
         majkaC();
         $('#dugme4').removeClass('dugme1').addClass('dugme');
+        povecajD(3);
     });
     $('#dugme4').on('click', function() {
         majkaD();
         $('#dugme5').removeClass('dugme1').addClass('dugme');
+        povecajD(4);
     });
     $('#dugme5').on('click', function() {
         majkaE();
         $('#dugme6').removeClass('dugme1').addClass('dugme');
+        povecajD(5);
     });
     $('#dugme6').on('click', function() {
         majkaF();
